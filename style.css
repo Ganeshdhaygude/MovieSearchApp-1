@@ -1,0 +1,43 @@
+*{
+    margin: 10px;
+    background-color: rgb(148, 135, 148);
+    
+}
+h2{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font: bolder;
+    font-style: italic";
+    
+}
+#inputsearch{
+    background-color: rgb(158, 151, 145);
+    border: 2px solid red;
+    border-radius: 1rem;
+    box-shadow: inset 2px 3px 4px rgb(75, 73, 73);
+    width: 60%;
+    height: 30px;
+    text-align: center;
+}
+button{
+    border: 2px solid rgb(240, 49, 49);
+     box-shadow: inset 2px 3px 4px rgb(75, 73, 73);
+    background-color: rgb(163, 130, 194);
+    height: 30px;
+    width: 80px;
+    color: rgb(40, 41, 43);
+    border-radius: 1rem;
+}
+#movieResults{
+  
+
+border: 2px solid red;
+border-radius: .5rem;
+box-shadow: inset 2px 3px 4px rgb(75, 73, 73);
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+background-color: rgb(218, 136, 218);
+}
