@@ -3,7 +3,7 @@ const searchButton = document.getElementById("searchButton");
 const movieResults = document.getElementById("movieResults");
 
 // Attach an event listener to the search button
-searchButton.addEventListener("click", debounce(searchMovies, 900)); // Debounce the searchMovies function with a 900ms delay
+inputsearch.addEventListener("keypress", debounce(searchMovies, 900)); // Debounce the searchMovies function with a 900ms delay
 
 function searchMovies() {
     const searchTerm = inputsearch.value.trim();
@@ -31,6 +31,8 @@ function searchMovies() {
                             <p>${movie.Year}</p>
                         `;
                         movieResults.appendChild(movieCard);
+                        
+
                     });
                 } else {
                     movieResults.innerHTML = "<p>No results</p>";
@@ -43,6 +45,7 @@ function searchMovies() {
 }
 
 function debounce(func, delay) {
+    
     let timerId;
 
     return function () {
